@@ -9,8 +9,8 @@ class Solution:
         for i in range(len(nums)):
             curr = nums[i]
             remain = target - curr;
-            if remain in dict:
-                return (dict[remain], i)
-            dict[curr] = i
+            if curr in dict:
+                return (dict[curr], i)
+            dict[remain] = i
         
         
